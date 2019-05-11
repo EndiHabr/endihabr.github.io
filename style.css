@@ -1,0 +1,323 @@
+html>*{
+margin: 0px;
+-moz-user-select: none; -khtml-user-select: none; user-select: none;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/les_derevya_vid_sverkhu_106161_2560x1600.jpg);
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Montserrat', cursive;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header>h1{
+    font-size: 55px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #98BD38;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.66);
+    font-family: 'Pattaya', cursive;
+}
+header>h3{
+    font-size: 37px;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    color: #D8D8D8;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.66);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    height: 200px;
+}
+.plus{
+    width: 790px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.plusbox{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plusbox> .img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: 489px;
+    background-position: -195px 0;
+    background-image: url(img/Fasady-shpon3-1.jpeg);
+    
+}
+.plusbox h1{
+    width: 300px;
+    height: auto;
+    font-family: Comfortaa;
+    font-size: 31px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #e28126;
+    text-align: center;
+    border-bottom: 3px solid #db7a53;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+}
+.plusbox p{
+font-family: Montserrat;
+/* font-style: normal;
+font-weight: normal; */
+font-size: 19px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.04em;
+color: #4D4C4C;
+
+}
+.slider{
+    width: 1000px;
+}
+.slick-prev:before {
+    color: #98BD38 !important;
+}
+.slick-next:before {
+    color: #98BD38 !important;
+}
+.lineware{
+    width: 970px;
+    height: 830px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    
+    line-height: 93.66%;
+    text-align: center;   
+    font-family: Comfortaa; 
+}
+.filter{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    line-height: 118%;
+
+}
+.fil{
+    height: 70px;
+    width: 190px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+
+.ware{
+    width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.ware>img{
+    position: inherit;  
+    padding: 10px;
+    width:  240px;
+    height: 240px;
+}
+
+
+.boxdropbtn{
+    background-color: #e28126;
+    width: 190px;
+    height: 46px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: all 1s ease-out;
+}
+
+
+.dropbtn {
+    /* background-color: #4CAF50; */
+    color: white;
+    padding: 20 px;
+    border: none;
+    
+    width: 250px;
+    height: auto;
+  }
+ 
+  .dropdown {
+    position: relative;
+    width: 190px;
+    /* display: inline-block; */
+  }
+  
+  .dropdown-content {
+    /* display: none; */
+    position: absolute;
+    top: 58px;
+    background-color: #f1f1f1;
+    width: 190px;
+    height: 0px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+  
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    top: 0px;
+    overflow: hidden;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content{display: block;height: 257px;}
+
+.dropdown:hover .boxdropbtn {background-color: #98BD38}
+
+
+
+.checkbox>*{
+    
+}
+
+.container {
+    
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-left: 35px;
+}
+  
+  /* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+  }
+  
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  
+  .container input:checked ~ .checkmark {
+    background-color: #98BD38;
+  }
+  
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hovf:hover{
+    color: #C76651
+}
+
+
+
+/*      MODAL  ////////////////////////////////////////////////////////// */
+
+.modal{
+    position: fixed; 
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(32, 32, 32, 0.507);
+    justify-content: center;
+    font-family: 'Montserrat', cursive;
+    font-size: 25px;
+    z-index: 10;
+    
+}
+.modalbox{
+    width: 750px;
+    height: 950px;
+    top: 0px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 27px;
+}
+.modhead{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 15px;
+}
+.modhead> span{
+    margin-left: 50px;
+}
+.close{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border:2px solid #4D4C4C;
+    color: #4D4C4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close:hover{
+    border:2px solid #C76651;;color: #C76651;
+}
